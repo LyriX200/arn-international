@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ARN International – Global Import & Export</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-900">
+  <!-- Preloader -->
+  <div id="preloader" class="fixed inset-0 flex items-center justify-center bg-white z-50">
+    <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
+  </div>
+
+  <!-- Hero Section with Video Background -->
+  <header class="relative h-screen overflow-hidden">
+    <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
+      <source src="video/hero-video.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div class="absolute inset-0 bg-black bg-opacity-60 z-10 flex flex-col justify-center items-center text-center px-4">
+      <h1 class="text-4xl md:text-6xl font-bold text-white mb-4" data-aos="fade-down">ARN International</h1>
+      <p class="text-xl md:text-2xl text-white mb-6" data-aos="fade-up">Your Trusted Global Import & Export Partner</p>
+      <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded text-lg" data-aos="zoom-in">Contact Us</a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-16 space-y-16">
+
+    <!-- Services, Products, Testimonials... -->
+    <!-- (Copy from previous sections if needed) -->
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2 class="text-3xl font-bold text-center mb-8" data-aos="fade-up">Contact Us</h2>
+      <form id="queryForm" class="max-w-xl mx-auto bg-white p-6 rounded shadow space-y-4" data-aos="fade-up">
+        <div>
+          <label for="name" class="block font-medium">Name</label>
+          <input type="text" id="name" name="Name" required class="w-full border border-gray-300 p-2 rounded" />
+        </div>
+        <div>
+          <label for="email" class="block font-medium">Email</label>
+          <input type="email" id="email" name="Email" required class="w-full border border-gray-300 p-2 rounded" />
+        </div>
+        <div>
+          <label for="message" class="block font-medium">Message</label>
+          <textarea id="message" name="Message" rows="5" required class="w-full border border-gray-300 p-2 rounded"></textarea>
+        </div>
+        <button type="submit" class="bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-800">Submit</button>
+        <p id="formStatus" class="text-sm text-green-600 hidden mt-2">Your message has been sent!</p>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white py-8">
+    <div class="text-center space-y-2">
+      <h3 class="text-xl font-semibold">ARN International</h3>
+      <p>Import & Export | Consulting | Global Trade</p>
+      <address class="not-italic text-sm">
+        3rd Floor, Desk No: 4, Office No: A321, Master Mind 4 Building,<br>
+        Royal Palms Road, Near Aarey Colony,<br>
+        Goregaon East, Mumbai, Maharashtra 400065, India
+      </address>
+      <p>Email: <a href="mailto:internationalarn@gmail.com" class="underline">internationalarn@gmail.com</a></p>
+      <p>Phone: <a href="tel:+919326617992" class="underline">+91 93266 17992</a></p>
+      <p class="text-xs">&copy; <span id="currentYear"></span> ARN International. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
